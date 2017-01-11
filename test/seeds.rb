@@ -19,15 +19,15 @@ class Post < ActiveRecord::Base
   belongs_to :user
 end
 users = User.create([
-  {:name => 'John', :email => 'john@example.com'},
-  {:name => 'Pearl', :email => 'pearl@example.com', :serialized_attribute => {:testing => true, :deep => {:deep => :deep}}},
-  {:name => 'Kathenrie', :email => 'kathenrie@example.com'},
+  {:name => 'John1', :email => 'john1@example.com'},
+  {:name => 'John2', :email => 'john2@example.com', :serialized_attribute => {:testing => true, :deep => {:deep => :deep}}},
+  {:name => 'John3', :email => 'john3@example.com'},
 ])
 Post.create([
-  {:title => "John's post1", :user_id => users[0].id},
-  {:title => "John's post2", :user_id => users[0].id},
-  {:title => "John's post3", :user_id => users[0].id},
-  {:title => "Pearl's post1", :user_id => users[1].id},
-  {:title => "Pearl's post2", :user_id => users[1].id},
-  {:title => "Kathenrie's post1", :user_id => users[2].id},
+  {:title => "John1's post1", :user_id => users[0].id},
+  {:title => "John1's post2", :user_id => users[0].id},
+  {:title => "John1's post3", :user_id => users[0].id},
+  {:title => "John2's post1", :user_id => users[1].id},
+  {:title => "John2's post2", :user_id => users[1].id},
+  {:title => "John3's post1", :user_id => users[2].id},
 ])
