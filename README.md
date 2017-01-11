@@ -6,7 +6,10 @@
 
 # SanitizeSqlLike
 
+Backport #sanitize_sql_like method from Rails 4 for Rails 3.
+
 Sanitizes a string so that it is safe to use within an SQL LIKE statement. 
+
 This method uses `escape_character` to escape all occurrences of “", ”_“ and ”%“
 
 ## Installation
