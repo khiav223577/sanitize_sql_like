@@ -7,4 +7,7 @@ class SanitizeSqlLikeTest < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::SanitizeSqlLike::VERSION
   end
+	def test_escape_percent_char
+    assert_equal('name\\%', User.sanitize_sql_like('name%'))
+  end
 end
