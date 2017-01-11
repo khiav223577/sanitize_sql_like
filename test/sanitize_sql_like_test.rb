@@ -8,9 +8,9 @@ class SanitizeSqlLikeTest < Minitest::Test
     refute_nil ::SanitizeSqlLike::VERSION
   end
 	def test_escape_percent
-    assert_equal('name\\%', User.sanitize_sql_like('name%'))
+    assert_equal('name\\%', User.send(:sanitize_sql_like, 'name%'))
   end
   def test_escape_underline
-    assert_equal('.name\\_', User.sanitize_sql_like('.name_'))
+    assert_equal('.name\\_', User.send(:sanitize_sql_like, '.name_'))
   end
 end
