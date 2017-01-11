@@ -30,6 +30,15 @@ Or install it yourself as:
 
 ## Usage
 
+Prevent SQL injection using LIKE operator in SQL query:
+```rb
+# Bad
+User.where("nickname LIKE ?", "%#{params[:nickname]}%")
+
+# Good
+User.where("nickname LIKE ?", "%#{User.send(:sanitize_sql_like, params[:nickname])}%")
+```
+
 
 
 
