@@ -1,10 +1,10 @@
+# SanitizeSqlLike
+
 [![Gem Version](https://img.shields.io/gem/v/sanitize_sql_like.svg?style=flat)](https://rubygems.org/gems/sanitize_sql_like)
 [![Build Status](https://travis-ci.org/khiav223577/sanitize_sql_like.svg?branch=master)](https://travis-ci.org/khiav223577/sanitize_sql_like)
 [![RubyGems](http://img.shields.io/gem/dt/sanitize_sql_like.svg?style=flat)](https://rubygems.org/gems/sanitize_sql_like)
 [![Code Climate](https://codeclimate.com/github/khiav223577/sanitize_sql_like/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/sanitize_sql_like)
 [![Test Coverage](https://codeclimate.com/github/khiav223577/sanitize_sql_like/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/sanitize_sql_like/coverage)
-
-# SanitizeSqlLike
 
 Backport #sanitize_sql_like method from Rails 4 for Rails 3.
 
