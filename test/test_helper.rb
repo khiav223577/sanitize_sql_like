@@ -1,9 +1,9 @@
-require "simplecov"
-SimpleCov.start
+require 'simplecov'
+SimpleCov.start 'test_frameworks'
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'sanitize_sql_like'
 
+require 'sanitize_sql_like'
 require 'minitest/autorun'
 
 ActiveRecord::Base.establish_connection(
