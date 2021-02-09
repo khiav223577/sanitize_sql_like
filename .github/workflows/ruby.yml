@@ -25,7 +25,7 @@ jobs:
           - 2.6
           - 2.7
         gemfile:
-          - Gemfile
+          - 3.2.gemfile
     env:
       BUNDLE_GEMFILE: "gemfiles/${{ matrix.gemfile }}"
 
