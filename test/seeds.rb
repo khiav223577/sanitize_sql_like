@@ -12,7 +12,12 @@ ActiveRecord::Schema.define do
   end
 end
 class User < ActiveRecord::Base
-  serialize :serialized_attribute, Hash
+  if Gem::Version.new(ActiveRecord::VERSION::STRING) < Gem::Version.new('7.1.0')
+    serialize :serialized_attribute, Hash
+  else
+    serialize :serialized_attribute, type: Hash
+  end
+
   has_many :posts
 end
 class Post < ActiveRecord::Base
