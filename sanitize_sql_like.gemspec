@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "sanitize_sql_like"
   spec.version       = SanitizeSqlLike::VERSION
   spec.authors       = ["khiav reoy"]
-  spec.email         = ["mrtmrt15xn@yahoo.com.tw"]
+  spec.email         = ["khiav223577@gmail.com"]
 
   spec.summary       = %q{Backport #sanitize_sql_like method from Rails 4 for Rails 3. Sanitizes a string so that it is safe to use within an SQL LIKE statement.}
   spec.description   = %q{Backport #sanitize_sql_like method from Rails 4 for Rails 3. Sanitizes a string so that it is safe to use within an SQL LIKE statement.}
